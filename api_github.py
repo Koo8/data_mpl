@@ -3,7 +3,7 @@ import pprint
 
 import requests
 
-url= 'https://api.github.com/users/TheAlgorithms/repos'
+url= 'https://api.github.com/users/TheAlgorithms'
 headers = {'Accept': 'application/vnd.github.v3+json'}
 r = requests.get(url, headers = headers) # a response has 3 parts, status, header and body
 response_json = r.json()
